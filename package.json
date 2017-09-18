@@ -13,8 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "foundation-sites": "^6.4.3",
-    "nuxt": "^1.0.0-rc3"
+    "nuxt": "^1.0.0-rc11",
+    "tachyons-sass": "^4.8.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
