@@ -3,7 +3,7 @@
     <navigation/>
     <section class="hero pa3 pa5-m pa5-l pa5-ns cf bb">
       <div class="fl w-100 w-100-m w-60-l w-60-ns">
-        <h1 class="f3 f2-m f2-l f2-ns mt0">Front-end Developer, Drupal &amp; WordPress</h1>
+        <h1 class="f3 f2-m f2-l f2-ns mt0 pt3">Front-end Developer, Drupal &amp; WordPress</h1>
         <p class="f4 f3-m f3-l f3-ns measure lh-copy">
           I build websites with Drupal, WordPress, Grav, and a variety of other great open source software. I design HTML5 themes and
           templates with Sass and Less, and use Gulp as my task runner.
@@ -16,7 +16,7 @@
       </div>
     </section>
     <section class="project pa3 pa5-m pa5-l pa5-ns cf bb">
-      <h1 class="f3 f2-m f2-l f2-ns mt0">Recent Projects</h1>
+      <h1 class="f3 f2-m f2-l f2-ns mt0 pt3">Recent Projects</h1>
       <p class="f4 f3-m f3-l f3-ns measure lh-copy mb5">
           I build websites with Drupal, WordPress, Grav, and a variety of other great open source software. I design HTML5 themes and
           templates with Sass and Less, and use Gulp as my task runner.
@@ -25,13 +25,13 @@
           <nuxt-link to="/projects/gifford"><img src="~/assets/img/gifford-lectures-phone.png" v-scroll-reveal.reset></nuxt-link>
           </div>
         <div class="fl w-100 w-100-m w-25-l w-25-ns pr4">
-          <nuxt-link to="/projects/acculturated"><img src="~/assets/img/acculturated_phone.png" v-scroll-reveal.reset></nuxt-link> 
+          <img src="~/assets/img/acculturated-phone.png" v-scroll-reveal.reset> 
             </div>
         <div class="fl w-100 w-100-m w-25-l w-25-ns pr4">
-          <img src="~/assets/img/charlene_phone.png" v-scroll-reveal.reset>
+          <img src="~/assets/img/csm-phone.png" v-scroll-reveal.reset>
            </div>
         <div class="fl w-100 w-100-m w-25-l w-25-ns">
-          <img src="~/assets/img/ears-magic_phone.png" v-scroll-reveal.reset>          </div>
+          <img src="https://www.algolia.com/static_assets/images/svg/screens/screen-digitalocean-tablet-34841f11.svg" v-scroll-reveal.reset>          </div>
       
     </section>
 
@@ -65,7 +65,7 @@
 
 .project {
 
-  background: #f8faff;
+  background: $gray-lighter;
   font-family: $avenir;
   img {
     box-shadow: rgba(112,128,175,0.2) 0 -16px 24px;

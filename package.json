@@ -13,8 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^4.3.1",
     "nuxt": "^1.0.0-rc11",
-    "tachyons-sass": "^4.8.1"
+    "scrollreveal": "^3.3.6",
+    "tachyons-sass": "^4.8.1",
+    "vue-scroll-reveal": "^1.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -26,6 +29,7 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "tachyons": "4.8.0"
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6"
   }
 }

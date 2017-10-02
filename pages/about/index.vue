@@ -9,9 +9,9 @@
             <time class="f6 ttu tracked">Web and Publishing Systems Developer, Scribe Inc., Philadelphia, PA</time>
           </header>
           <div class="fn fl-ns w-70-ns">
-            <ul>
-              <li>Maintained and deployed all company-managed Drupal and WordPress sites on the Pantheon platform.</li>
-              <li>Migration to Pantheon cut deployment time by 30%.</li>
+
+              <p>Maintained and deployed all company-managed Drupal and WordPress sites on the Pantheon platform.</p>
+              <p>Migration to Pantheon cut deployment time by 30%.</p>
               <li>Lead theme developer for all company-produced Drupal and WordPress sites.</li>
               <li>Led front-end development of web application that allows Scribe clients to publish content to a variety of
                 output formats, including EPUB, Kindle, and XML. Web application has cut title conversion times by 25%.</li>
@@ -19,12 +19,13 @@
               <li>Transitioned company project data from existing Microsoft SQL system into current MySQL database model.</li>
               <li>Migrated existing CRM system from SugarCRM to BaseCRM.</li>
               <li>Developed custom content archives using Drupal 7 and Apache Solr that serves as the main search tool for major
-                publishers.</li>
+                publishers.
+              </li>
               <li>Project manager for transitioning content from legacy formats into modern XML.</li>
               <li>Wrote custom importer to create Drupal nodes based on custom data model.</li>
               <li>Developed theme and UI for specialized site users. Acted as lead architect for server LAMP stack and managed
                 DNS updates andnetwork configuration.</li>
-            </ul>
+            
           </div>
         </article>
         <article>
@@ -60,6 +61,7 @@
   </div>
 </template>
 
+
 <script>
   import Navigation from '~/components/Navigation.vue'
 
@@ -69,3 +71,4 @@
     }
   }
 </script>
+

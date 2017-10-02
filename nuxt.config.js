@@ -7,7 +7,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Personal website for Andrew H. Thomas' }
+      { hid: 'description', name: 'description', content: 'Personal website for front-end developer Andrew H. Thomas' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -15,7 +15,7 @@ module.exports = {
   },
   css: [
     // Load a node module directly (here it's a SASS file)
-    'tachyons'
+    '~/assets/scss/main.scss'
   ],
   /*
   ** Customize the progress-bar color
@@ -25,6 +25,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['@nuxtjs/axios', 'vue-scroll-reveal'],
     /*
     ** Run ESLINT on save
     */
@@ -38,5 +39,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  plugins: [
+    // ssr: false to only include it on client-side
+    { src: '~/plugins/vue-scroll-reveal.js', ssr: false }
+  ]
 }
