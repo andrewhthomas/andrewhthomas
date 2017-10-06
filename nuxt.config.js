@@ -1,3 +1,4 @@
+const BabiliPlugin = require('babili-webpack-plugin')
 module.exports = {
   /*
   ** Headers of the page
@@ -25,11 +26,15 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['@nuxtjs/axios', 'vue-scroll-reveal'],
+    vendor: ['@nuxtjs/axios', 'vue-scroll-reveal', 'vue-awesome', 'vue-moment'],
     /*
     ** Run ESLINT on save
     */
     extend (config, ctx) {
+      if (!ctx.dev) {
+        config.plugins = config.plugins.filter((plugin) => plugin.constructor.name !== 'UglifyJsPlugin')
+        config.plugins.push(new BabiliPlugin())
+      }
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -42,6 +47,14 @@ module.exports = {
   },
   plugins: [
     // ssr: false to only include it on client-side
-    { src: '~/plugins/vue-scroll-reveal.js', ssr: false }
-  ]
+    { src: '~/plugins/vue-scroll-reveal.js', ssr: false },
+    { src: '~/plugins/vue-awesome.js', ssr: false },
+    { src: '~/plugins/vue-moment.js', ssr: false }
+  ],
+  generate: {
+    routes: [
+      '/work/acculturated',
+      '/work/the-gifford-lectures'
+    ]
+  }
 }

@@ -21,17 +21,18 @@
           I build websites with Drupal, WordPress, Grav, and a variety of other great open source software. I design HTML5 themes and
           templates with Sass and Less, and use Gulp as my task runner.
         </p>
-        <div class="fl w-100 w-100-m w-25-l w-25-ns pr4">
-          <nuxt-link to="/projects/gifford"><img src="~/assets/img/gifford-lectures-phone.png" v-scroll-reveal.reset></nuxt-link>
+        <div class="fl w-100 w-50-m w-25-ns pr0 pr2 pr4-l mb4">
+          <nuxt-link to="/work/gifford"><img src="~/assets/img/gifford-lectures-phone.png" v-scroll-reveal.reset></nuxt-link>
           </div>
-        <div class="fl w-100 w-100-m w-25-l w-25-ns pr4">
-          <nuxt-link to="/projects/acculturated"><img src="~/assets/img/acculturated_phone.png" v-scroll-reveal.reset></nuxt-link> 
+        <div class="fl w-100 w-50-m w-25-ns pl2-m pr0 pr4-l mb4">
+          <nuxt-link to="/work/acculturated"><img src="~/assets/img/acculturated_phone.png" v-scroll-reveal.reset></nuxt-link> 
             </div>
-        <div class="fl w-100 w-100-m w-25-l w-25-ns pr4">
+        <div class="fl w-100 w-50-m w-25-ns pr0 pr2 pr4-l">
           <img src="~/assets/img/charlene_phone.png" v-scroll-reveal.reset>
            </div>
-        <div class="fl w-100 w-100-m w-25-l w-25-ns">
-          <img src="~/assets/img/ears-magic_phone.png" v-scroll-reveal.reset>          </div>
+        <div class="fl w-100 w-50-m w-25-ns pl2-m">
+          <img src="~/assets/img/ears-magic_phone.png" v-scroll-reveal.reset>
+          </div>
       
     </section>
 
