@@ -1,5 +1,7 @@
 # andrewhthomas
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fb378908cacc4248a304c4d722a34d58)](https://www.codacy.com/app/andrewhthomas/andrewhthomas?utm_source=github.com&utm_medium=referral&utm_content=andrewhthomas/andrewhthomas&utm_campaign=badger)
+
 > Personal website for Andrew H. Thomas
 
 ## Build Setup
