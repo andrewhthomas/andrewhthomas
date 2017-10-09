@@ -52,9 +52,7 @@
 
 <style lang="scss" scoped>
   @import "~assets/scss/_variables.scss";
-
   .project {
-
     background: #f8faff;
     font-family: $avenir;
     img {

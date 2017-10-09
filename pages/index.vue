@@ -55,7 +55,6 @@
 </script>
 
 <style lang="scss" scoped>
-
 @import "~assets/scss/_variables.scss";
 .hero {
   color: $white;
@@ -63,43 +62,34 @@
   background-image: linear-gradient(60deg,#306efe,#003ab7);
   font-family: $avenir;
 }
-
 .project {
-
   background: #f8faff;
   font-family: $avenir;
   img {
     box-shadow: rgba(112,128,175,0.2) 0 -16px 24px;
-
   }
 }
-
 .promote {
-  background: $white;
   position: relative;
-    padding-top: 0;
-
+  padding-top: 0;
+  background: $white;
   &:before {
-    
-    content: '';
-    display: block;
     position: absolute;
+    z-index: 0;
+    z-index: 1;
+    top: -170px;
+    display: block;
     width: 100%;
     height: 350px;
-    background: white;
+    content: "";
     -ms-transform: skewY(-6deg);
     transform: skewY(-6deg);
-    z-index: 0;
-    top: -170px;
-    z-index: 1;
+    background: white;
     box-shadow: rgba(112,128,175,0.2) 0 -16px 24px;
-
-}
   }
-
+}
 .project--image {
   background: $gray;
-
 }
 .slide-in-left {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

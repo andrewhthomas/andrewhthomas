@@ -64,19 +64,14 @@
 
 <style lang="scss" scoped>
   @import "~assets/scss/_variables.scss";
-
   .project {
-
     background: #f8faff;
     font-family: $avenir;
   }
-
   .earsmagic {
-    background-image: url('~/assets/img/earsmagic_desktop.png');
+    background-image: url("~/assets/img/earsmagic_desktop.png");
   }
-
   .gifford {
-    background-image: url('~/assets/img/gifford-lectures_desktop.png');
+    background-image: url("~/assets/img/gifford-lectures_desktop.png");
   }
-
 </style>
