@@ -14,10 +14,6 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  css: [
-    // Load a node module directly (here it's a SASS file)
-    '~/assets/scss/main.scss'
-  ],
   /*
   ** Customize the progress-bar color
   */
@@ -49,6 +45,7 @@ module.exports = {
     // ssr: false to only include it on client-side
     { src: '~/plugins/vue-scroll-reveal.js', ssr: false },
     { src: '~/plugins/vue-awesome.js', ssr: false },
+    { src: '~plugins/buefy', ssr: false },
     { src: '~/plugins/vue-moment.js', ssr: false }
   ],
   generate: {

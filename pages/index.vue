@@ -1,49 +1,62 @@
 <template>
   <div>
     <navigation/>
-    <section class="hero pa3 pa5-m pa5-l pa5-ns cf bb">
-      <div class="fl w-100 w-100-m w-60-l w-60-ns">
-        <h1 class="f3 f2-m f2-l f2-ns mt0">Front-end Developer, Drupal &amp; WordPress</h1>
-        <p class="f4 f3-m f3-l f3-ns measure lh-copy">
-          I build websites with Drupal, WordPress, Grav, and a variety of other great open source software. I design HTML5 themes and
-          templates with Sass and Less, and use Gulp as my task runner.
-        </p>
-        <p class="f4 f3-m f3-l f3-ns measure lh-copy">
-          Right now I'm focusing on learning Vue.js and brushing up on my Laravel skills.
-        </p>
-        <p class="f4 f3-m f3-l f3-ns measure lh-copy">I currently work for the publishing services firm Scribe Inc.</p>
-        </p>
+    <section class="hero">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+          <h1>I&rsquo;m a Philadelphia based front end developer.</h1>
+          <p>
+            I build websites with Drupal, WordPress, Grav, and a variety of other great open source software. I design HTML5 themes and
+            templates with Sass and Less, and use Gulp as my task runner.
+          </p>
+          <p>
+            Right now I&rsquo;m focusing on learning Vue.js and brushing up on my Laravel skills.
+          </p>
+          <p>I currently work for the publishing services firm Scribe Inc.</p>
+          </p>
+        </div>
+        </div>
       </div>
     </section>
-    <section class="project pa3 pa5-m pa5-l pa5-ns cf bb">
-      <h1 class="f3 f2-m f2-l f2-ns mt0">Recent Projects</h1>
-      <p class="f4 f3-m f3-l f3-ns measure lh-copy mb5">
-          I build websites with Drupal, WordPress, Grav, and a variety of other great open source software. I design HTML5 themes and
-          templates with Sass and Less, and use Gulp as my task runner.
-        </p>
-        <div class="fl w-100 w-50-m w-25-ns pr0 pr2 pr4-l mb4">
-          <nuxt-link to="/work/gifford"><img src="~/assets/img/gifford-lectures-phone.png" v-scroll-reveal.reset></nuxt-link>
+    <section class="project">
+       <div class="container">
+        <div class="columns">
+          <div class="column">
+      <h1>Recent Projects</h1>
+      <p>
+        I build websites with Drupal, WordPress, Grav, and a variety of other great open source software. I design HTML5 themes and
+        templates with Sass and Less, and use Gulp as my task runner.
+      </p>
           </div>
-        <div class="fl w-100 w-50-m w-25-ns pl2-m pr0 pr4-l mb4">
-          <nuxt-link to="/work/acculturated"><img src="~/assets/img/acculturated_phone.png" v-scroll-reveal.reset></nuxt-link> 
-            </div>
-        <div class="fl w-100 w-50-m w-25-ns pr0 pr2 pr4-l">
-          <img src="~/assets/img/charlene_phone.png" v-scroll-reveal.reset>
-           </div>
-        <div class="fl w-100 w-50-m w-25-ns pl2-m">
-          <img src="~/assets/img/ears-magic_phone.png" v-scroll-reveal.reset>
           </div>
-      
+          
+          <div class="columns">
+      <div class="column">
+        <nuxt-link to="/work/the-gifford-lectures">
+          <img src="~/assets/img/gifford-lectures-phone.png" v-scroll-reveal.reset>
+        </nuxt-link>
+      </div>
+      <div class="column">
+        <nuxt-link to="/work/acculturated">
+          <img src="~/assets/img/acculturated_phone.png" v-scroll-reveal.reset>
+        </nuxt-link>
+      </div>
+      <div class="column">
+        <img src="~/assets/img/charlene_phone.png" v-scroll-reveal.reset>
+      </div>
+      <div class="column">
+        <img src="~/assets/img/ears-magic_phone.png" v-scroll-reveal.reset>
+      </div>
+      </div>
+</div>
     </section>
 
     <section class="promote">
-
+      
     </section>
   </div>
 </template>
-
-
-
 <script>
   import Navigation from '~/components/Navigation.vue'
 
@@ -55,79 +68,113 @@
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/_variables.scss";
-.hero {
-  color: $white;
-  background-color: #306ffd;
-  background-image: linear-gradient(60deg,#306efe,#003ab7);
-  font-family: $avenir;
-}
-.project {
-  background: #f8faff;
-  font-family: $avenir;
-  img {
-    box-shadow: rgba(112,128,175,0.2) 0 -16px 24px;
+  @import "~assets/scss/globals.scss";
+
+  .container {
+    @include mobile {
+      margin: 0 20px;
+    }
   }
-}
-.promote {
-  position: relative;
-  padding-top: 0;
-  background: $white;
-  &:before {
-    position: absolute;
-    z-index: 0;
-    z-index: 1;
-    top: -170px;
-    display: block;
-    width: 100%;
-    height: 350px;
-    content: "";
-    -ms-transform: skewY(-6deg);
-    transform: skewY(-6deg);
-    background: white;
-    box-shadow: rgba(112,128,175,0.2) 0 -16px 24px;
+  .hero {
+    background: #ffefef;
+    padding: 3rem 0;
+
+    h1 {
+      font-size: 6rem;
+      font-family: "Nunito";
+      color: $heading-color;
+      font-weight: 300;
+      margin: 0 0 1.5rem 0;
+      letter-spacing: -1px;
+      line-height: 1.2em;
+    }
+
+    p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    }
   }
-}
-.project--image {
-  background: $gray;
-}
-.slide-in-left {
-  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-/* ----------------------------------------------
+
+  .project {
+    background: #ffefef;
+    padding: 3rem 0;
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      font-family: "Nunito";
+      margin: 0 0 1.5rem 0;
+    }
+
+    p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    }
+
+    img {
+      box-shadow: rgba(112, 128, 175, 0.2) 0 -16px 24px;
+    }
+  }
+
+  .promote {
+    position: relative;
+    padding-top: 0;
+    background: $white;
+    &:before {
+      position: absolute;
+      z-index: 1;
+      top: -170px;
+      display: block;
+      width: 100%;
+      height: 350px;
+      content: "";
+      -ms-transform: skewY(-6deg);
+      transform: skewY(-6deg);
+      background: white;
+      box-shadow: rgba(112, 128, 175, 0.2) 0 -16px 24px;
+    }
+  }
+
+  .project--image {
+    background: $gray;
+  }
+
+  .slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  /* ----------------------------------------------
  * Generated by Animista on 2017-9-28 15:20:28
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-
-/**
+  /**
  * ----------------------------------------
  * animation slide-in-left
  * ----------------------------------------
  */
-@-webkit-keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
+  @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 </style>
