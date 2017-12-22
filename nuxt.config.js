@@ -11,7 +11,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Personal website for front-end developer Andrew H. Thomas' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900|Open+Sans:400,400i,700,700i' }
     ]
   },
   /*
@@ -22,7 +23,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['@nuxtjs/axios', 'vue-scroll-reveal', 'vue-awesome', 'vue-moment'],
+    vendor: ['@nuxtjs/axios', 'vue-scroll-reveal', 'vue-awesome'],
     /*
     ** Run ESLINT on save
     */
@@ -45,8 +46,7 @@ module.exports = {
     // ssr: false to only include it on client-side
     { src: '~/plugins/vue-scroll-reveal.js', ssr: false },
     { src: '~/plugins/vue-awesome.js', ssr: false },
-    { src: '~plugins/buefy', ssr: false },
-    { src: '~/plugins/vue-moment.js', ssr: false }
+    { src: '~plugins/buefy', ssr: false }
   ],
   generate: {
     routes: [
