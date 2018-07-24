@@ -15,14 +15,13 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
-@import "~assets/scss/_variables.scss";
-.wrapper {
-  background: $white;
-  font-family: $font-body;
-  color: $text-color;
-  font-weight: 500;
+
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 </style>

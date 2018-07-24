@@ -1,11 +1,12 @@
 <template>
   <div>
     <navigation/>
-    <section class="hero">
+    <section class="hero is-primary">
+  <div class="hero-body">
       <div class="container">
         <div class="columns">
-          <div class="column is-8 is-offset-2">
-          <h1>I&rsquo;m a Philadelphia based front end developer.</h1>
+          <div class="column is-10">
+          <h1 class="title">I&rsquo;m a Philadelphia based front end developer.</h1>
           <p>
             I build websites with Drupal, WordPress, Grav, and a variety of other great open source software. I design HTML5 themes and
             templates with Sass and Less, and use Gulp as my task runner.
@@ -17,7 +18,7 @@
           </p>
         </div>
         </div>
-      </div>
+      </div></div>
     </section>
     <section class="project">
        <div class="container">
@@ -30,7 +31,7 @@
       </p>
           </div>
           </div>
-          
+
           <div class="columns">
       <div class="column">
         <nuxt-link to="/work/the-gifford-lectures">
@@ -53,7 +54,7 @@
     </section>
 
     <section class="promote">
-      
+
     </section>
   </div>
 </template>
@@ -68,68 +69,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "~assets/scss/globals.scss";
 
-  .hero {
-    background: #ffefef;
-    padding: 3rem 0;
 
-    h1 {
-      font-size: 6rem;
-      font-family: "Nunito";
-      color: $heading-color;
-      font-weight: 300;
-      margin: 0 0 1.5rem 0;
-      letter-spacing: -1px;
-      line-height: 1.2em;
-    }
 
-    p {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    }
-  }
-
-  .project {
-    background: #ffefef;
-    padding: 3rem 0;
-    h1 {
-      font-size: 2.25rem;
-      font-weight: 800;
-      font-family: "Nunito";
-      margin: 0 0 1.5rem 0;
-    }
-
-    p {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    }
-
-    img {
-      box-shadow: rgba(112, 128, 175, 0.2) 0 -16px 24px;
-    }
-  }
-
-  .promote {
-    position: relative;
-    padding-top: 0;
-    background: $white;
-    &:before {
-      position: absolute;
-      z-index: 1;
-      top: -170px;
-      display: block;
-      width: 100%;
-      height: 350px;
-      content: "";
-      -ms-transform: skewY(-6deg);
-      transform: skewY(-6deg);
-      background: white;
-      box-shadow: rgba(112, 128, 175, 0.2) 0 -16px 24px;
-    }
-  }
-
-  .project--image {
-    background: $gray;
-  }
 </style>

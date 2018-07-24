@@ -1,0 +1,80 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+// customize styles
+$family-sans-serif: "aw-conqueror-sans-1", "aw-conqueror-sans-2", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-serif: "aw-conqueror-didot-1", "aw-conqueror-didot-2";
+$orange: #e58e26;
+$yellow: #f6b93b;
+$green: #78e08f;
+$turquoise: #38ada9;
+$cyan: #82ccdd;
+$blue: #4a69bd;
+$purple: #0c2461;
+$red: #e55039;
+$primary: $blue;
+@import "~bulma";
+
+/*
+*
+*
+*/
+.hero {
+  padding: 3rem 0;
+
+  h1 {
+    font-family: $family-serif;
+    font-size: 6.68vw;
+    line-height: 1.2;
+    font-weight: 300;
+
+    margin: 0 0 1.5rem 0;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.project {
+  background: #6a89cc;
+  padding: 3rem 0;
+  h1 {
+    font-family: "Nunito";
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin: 0 0 1.5rem 0;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    box-shadow: rgba(112, 128, 175, 0.2) 0 -16px 24px;
+  }
+}
+
+.promote {
+  padding-top: 0;
+  position: relative;
+
+  &:before {
+    -ms-transform: skewY(-6deg);
+    background: white;
+    box-shadow: rgba(112, 128, 175, 0.2) 0 -16px 24px;
+    content: "";
+    display: block;
+    height: 350px;
+    position: absolute;
+    top: -170px;
+    transform: skewY(-6deg);
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.project--image {
+}
